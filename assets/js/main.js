@@ -1,0 +1,261 @@
+// Main JavaScript for Best Traders Website
+
+// Category Icons Mapping
+const categoryIcons = {
+    'Seating': '🪑',
+    'Storage & Utility': '🧺',
+    'Cleaning Essentials': '🧼',
+    'Bath Essentials': '🛁',
+    'Kitchen Storage': '🍱',
+    'Appliance Accessories': '⚙️'
+};
+
+// Category Gradients
+const categoryGradients = {
+    'Seating': 'linear-gradient(135deg, #FFB6C1 0%, #FFF0F5 100%)',
+    'Storage & Utility': 'linear-gradient(135deg, #FFE4E1 0%, #FFF5F7 100%)',
+    'Cleaning Essentials': 'linear-gradient(135deg, #E6E6FA 0%, #F8F8FF 100%)',
+    'Bath Essentials': 'linear-gradient(135deg, #B0E0E6 0%, #F0F8FF 100%)',
+    'Kitchen Storage': 'linear-gradient(135deg, #FFDAB9 0%, #FFF8DC 100%)',
+    'Appliance Accessories': 'linear-gradient(135deg, #D8BFD8 0%, #F5F5F5 100%)'
+};
+
+// Color Hex Mapping
+const colorHex = {
+    'Blush Pink': '#f9a8c4',
+    'Pearl White': '#fff7fb',
+    'Slate Grey': '#9aa0b5',
+    'Rosewater': '#f7b5ca',
+    'Frost White': '#fef6ff',
+    'Sky Mist': '#bad6f2',
+    'Cherry Blossom': '#f6a6c1',
+    'Cloud White': '#fefaff',
+    'Dusty Mauve': '#c7a7bd',
+    'Soft Blush': '#fbc8d9',
+    'Snow': '#ffffff',
+    'Seafoam': '#cce6e8',
+    'Cotton Candy': '#fdd0e1',
+    'Ivory': '#fff2df',
+    'Morning Dew': '#deece6',
+    'Platinum Pink': '#f2a2c2',
+    'Moonlight': '#e1d9f5',
+    'Charcoal': '#6d6a7c'
+};
+
+// Load products from JSON
+async function loadProducts() {
+    try {
+        const response = await fetch('resources/products.json');
+        if (!response.ok) throw new Error('Failed to load products');
+        return await response.json();
+    } catch (error) {
+        console.error('Error loading products:', error);
+        return [];
+    }
+}
+
+// Create product card HTML
+function createProductCard(product) {
+    const icon = categoryIcons[product.category] || '🛒';
+    const gradient = categoryGradients[product.category] || 'linear-gradient(135deg, #FFB6C1 0%, #FFF0F5 100%)';
+    const discount = product.mrp ? Math.round(((product.mrp - product.price) / product.mrp) * 100) : 0;
+
+    const colors = product.colors.slice(0, 3).map(color => {
+        const hex = colorHex[color] || '#FFB6C1';
+        return `<span class="color-dot" style="background: ${hex};" title="${color}"></span>`;
+    }).join('');
+
+    return `
+        <div class="product-card">
+            <div class="product-image" style="background: ${gradient};">
+                <div class="product-icon-display">${icon}</div>
+                ${discount > 0 ? `<span class="product-badge">${discount}% OFF</span>` : ''}
+            </div>
+            <div class="product-body">
+                <span class="category-tag">${product.category}</span>
+                <h3 class="product-name">${product.name}</h3>
+                <div class="product-price">
+                    <span class="current-price">₹${product.price.toFixed(2)}</span>
+                    ${product.mrp ? `<span class="original-price">₹${product.mrp.toFixed(2)}</span>` : ''}
+                </div>
+                <div class="product-colors">
+                    ${colors}
+                </div>
+                <div class="product-meta">
+                    ${product.capacity ? `Capacity: ${product.capacity}<br>` : ''}
+                    ${product.dimensions ? `Dimensions: ${product.dimensions.substring(0, 30)}...` : ''}
+                </div>
+                <div class="product-actions">
+                    <a href="product-detail.html?id=${product.id}" class="btn btn-outline">View Details</a>
+                    <button class="btn btn-primary" onclick="addToCart(${product.id})">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    `;
+}
+
+// Load featured products on homepage
+async function loadFeaturedProducts() {
+    const carousel = document.getElementById('featured-carousel');
+    if (!carousel) return;
+
+    const products = await loadProducts();
+    const featured = products.slice(0, 6); // Get first 6 products
+
+    if (featured.length > 0) {
+        carousel.innerHTML = featured.map(product => createProductCard(product)).join('');
+    } else {
+        carousel.innerHTML = '<p class="text-center">No products available at the moment.</p>';
+    }
+}
+
+// Add to cart functionality (placeholder)
+function addToCart(productId) {
+    alert(`Product ${productId} added to cart!`);
+    // Update cart badge
+    const badge = document.querySelector('.cart-btn .badge');
+    if (badge) {
+        const currentCount = parseInt(badge.textContent) || 0;
+        badge.textContent = currentCount + 1;
+    }
+}
+
+// Back to top button
+function initBackToTop() {
+    const backToTopBtn = document.getElementById('backToTop');
+    if (!backToTopBtn) return;
+
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 300) {
+            backToTopBtn.classList.add('visible');
+        } else {
+            backToTopBtn.classList.remove('visible');
+        }
+    });
+
+    backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+}
+
+// Mobile menu toggle
+function initMobileMenu() {
+    const menuBtn = document.querySelector('.mobile-menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (menuBtn && navLinks) {
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('mobile-open');
+        });
+    }
+}
+
+// Newsletter form
+function initNewsletter() {
+    const form = document.querySelector('.newsletter-form');
+    if (!form) return;
+
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const email = form.querySelector('input[type="email"]').value;
+        alert(`Thank you for subscribing with ${email}!`);
+        form.reset();
+    });
+}
+
+// Smooth scroll for anchor links
+function initSmoothScroll() {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            const href = this.getAttribute('href');
+            if (href !== '#' && href.length > 1) {
+                e.preventDefault();
+                const target = document.querySelector(href);
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            }
+        });
+    });
+}
+
+// Color filter functionality
+function initColorFilters() {
+    const colorFilters = document.querySelectorAll('.color-filter');
+
+    colorFilters.forEach(filter => {
+        filter.addEventListener('click', () => {
+            // Remove active class from all
+            colorFilters.forEach(f => f.classList.remove('active'));
+            // Add active to clicked
+            filter.classList.add('active');
+
+            const selectedColor = filter.dataset.color;
+            console.log('Selected color:', selectedColor);
+            // Could filter products here if we want dynamic filtering on homepage
+        });
+    });
+}
+
+// Animation on scroll
+function initScrollAnimations() {
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, observerOptions);
+
+    // Observe category cards
+    document.querySelectorAll('.category-card, .feature-card').forEach(card => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(30px)';
+        card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(card);
+    });
+}
+
+// Search functionality
+function initSearch() {
+    const searchBtn = document.querySelector('.search-btn');
+    if (!searchBtn) return;
+
+    searchBtn.addEventListener('click', () => {
+        const searchTerm = prompt('Search for products:');
+        if (searchTerm) {
+            window.location.href = `products.html?search=${encodeURIComponent(searchTerm)}`;
+        }
+    });
+}
+
+// Initialize all functions when DOM is loaded
+document.addEventListener('DOMContentLoaded', () => {
+    loadFeaturedProducts();
+    initBackToTop();
+    initMobileMenu();
+    initNewsletter();
+    initSmoothScroll();
+    initColorFilters();
+    initScrollAnimations();
+    initSearch();
+});
+
+// Export for use in other files
+window.categoryIcons = categoryIcons;
+window.categoryGradients = categoryGradients;
+window.colorHex = colorHex;
+window.createProductCard = createProductCard;
+window.addToCart = addToCart;

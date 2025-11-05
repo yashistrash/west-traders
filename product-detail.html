@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Best Traders</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>Best Traders</h1>
+                <span class="tagline">Premium Living</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="index.html#categories">Categories</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="nav-icons">
+                <button class="icon-btn search-btn">🔍</button>
+                <button class="icon-btn cart-btn">
+                    🛒
+                    <span class="badge">0</span>
+                </button>
+            </div>
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+    </nav>
+
+    <!-- Product Detail Section -->
+    <section class="product-detail">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> / <a href="products.html">Products</a> / <span id="productCategory">Category</span> / <span id="productNameBreadcrumb">Product</span>
+            </div>
+
+            <div class="product-layout">
+                <!-- Product Images -->
+                <div class="product-images">
+                    <div class="main-image" id="mainImage">
+                        <div class="image-placeholder">
+                            <div class="product-icon" id="productIcon">🛒</div>
+                        </div>
+                        <button class="wishlist-btn">❤️</button>
+                    </div>
+                    <div class="thumbnail-images">
+                        <div class="thumbnail active" data-angle="front">
+                            <div class="thumb-icon" id="thumbIcon1">🛒</div>
+                        </div>
+                        <div class="thumbnail" data-angle="side">
+                            <div class="thumb-icon" id="thumbIcon2">🛒</div>
+                        </div>
+                        <div class="thumbnail" data-angle="top">
+                            <div class="thumb-icon" id="thumbIcon3">🛒</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="product-info">
+                    <span class="category-badge" id="categoryBadge">Category</span>
+                    <h1 id="productName">Product Name</h1>
+
+                    <div class="rating">
+                        <div class="stars">★★★★★</div>
+                        <span class="rating-text">(4.8/5) 127 Reviews</span>
+                    </div>
+
+                    <div class="price-box">
+                        <div class="price-main">
+                            <span class="current-price" id="currentPrice">₹0.00</span>
+                            <span class="original-price" id="originalPrice">₹0.00</span>
+                        </div>
+                        <span class="discount-badge" id="discountBadge">0% OFF</span>
+                        <p class="savings-text" id="savingsText">You save ₹0.00</p>
+                    </div>
+
+                    <div class="product-description">
+                        <h3>Product Description</h3>
+                        <p id="productDescription">Loading product description...</p>
+                    </div>
+
+                    <!-- Color Selection -->
+                    <div class="color-selection">
+                        <h3>Available Colors</h3>
+                        <p class="selection-subtitle">Choose your favorite shade</p>
+                        <div class="color-options" id="colorOptions">
+                            <!-- Colors will be loaded here -->
+                        </div>
+                    </div>
+
+                    <!-- Product Specifications -->
+                    <div class="specifications">
+                        <h3>Specifications</h3>
+                        <table class="specs-table">
+                            <tr>
+                                <td>Capacity</td>
+                                <td id="specCapacity">-</td>
+                            </tr>
+                            <tr>
+                                <td>Dimensions</td>
+                                <td id="specDimensions">-</td>
+                            </tr>
+                            <tr>
+                                <td>Material</td>
+                                <td>Premium Virgin Plastic</td>
+                            </tr>
+                            <tr>
+                                <td>Category</td>
+                                <td id="specCategory">-</td>
+                            </tr>
+                            <tr>
+                                <td>SKU</td>
+                                <td id="specSKU">-</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="product-actions">
+                        <button class="btn btn-primary btn-large">
+                            🛒 Add to Cart
+                        </button>
+                        <button class="btn btn-outline btn-large">
+                            💰 Buy Now
+                        </button>
+                    </div>
+
+                    <!-- Trust Badges -->
+                    <div class="trust-badges">
+                        <div class="badge-item">
+                            <span class="badge-icon">🔒</span>
+                            <span>Secure Payment</span>
+                        </div>
+                        <div class="badge-item">
+                            <span class="badge-icon">🚚</span>
+                            <span>Fast Shipping</span>
+                        </div>
+                        <div class="badge-item">
+                            <span class="badge-icon">✓</span>
+                            <span>Quality Guaranteed</span>
+                        </div>
+                        <div class="badge-item">
+                            <span class="badge-icon">↩️</span>
+                            <span>Easy Returns</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tabs Section -->
+            <div class="product-tabs">
+                <div class="tab-headers">
+                    <button class="tab-header active" data-tab="details">Details</button>
+                    <button class="tab-header" data-tab="specs">Full Specifications</button>
+                    <button class="tab-header" data-tab="reviews">Reviews (127)</button>
+                </div>
+                <div class="tab-contents">
+                    <div class="tab-content active" id="details-tab">
+                        <h3>Product Details</h3>
+                        <p id="fullDescription">This premium household product is crafted from high-quality virgin plastic, ensuring durability and longevity. The modern design seamlessly blends with contemporary home aesthetics while providing exceptional functionality. Available in multiple beautiful colors to match your personal style.</p>
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>Made from premium virgin plastic</li>
+                            <li>Durable and long-lasting construction</li>
+                            <li>Modern and elegant design</li>
+                            <li>Available in multiple colors</li>
+                            <li>Easy to clean and maintain</li>
+                            <li>Perfect for contemporary homes</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="specs-tab">
+                        <h3>Complete Specifications</h3>
+                        <div class="full-specs-grid">
+                            <div class="spec-card">
+                                <h4>Physical Dimensions</h4>
+                                <p id="fullDimensions">-</p>
+                            </div>
+                            <div class="spec-card">
+                                <h4>Capacity</h4>
+                                <p id="fullCapacity">-</p>
+                            </div>
+                            <div class="spec-card">
+                                <h4>Material</h4>
+                                <p>100% Premium Virgin Plastic</p>
+                            </div>
+                            <div class="spec-card">
+                                <h4>Available Colors</h4>
+                                <p id="fullColors">-</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="reviews-tab">
+                        <h3>Customer Reviews</h3>
+                        <div class="reviews-summary">
+                            <div class="average-rating">
+                                <h2>4.8</h2>
+                                <div class="stars">★★★★★</div>
+                                <p>Based on 127 reviews</p>
+                            </div>
+                            <div class="rating-breakdown">
+                                <div class="rating-bar">
+                                    <span>5 ★</span>
+                                    <div class="bar"><div class="fill" style="width: 80%"></div></div>
+                                    <span>102</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span>4 ★</span>
+                                    <div class="bar"><div class="fill" style="width: 15%"></div></div>
+                                    <span>19</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span>3 ★</span>
+                                    <div class="bar"><div class="fill" style="width: 3%"></div></div>
+                                    <span>4</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span>2 ★</span>
+                                    <div class="bar"><div class="fill" style="width: 1%"></div></div>
+                                    <span>1</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span>1 ★</span>
+                                    <div class="bar"><div class="fill" style="width: 1%"></div></div>
+                                    <span>1</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Related Products -->
+            <div class="related-products">
+                <h2>You May Also Like</h2>
+                <div class="products-carousel" id="relatedProducts">
+                    <!-- Related products will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Best Traders</h3>
+                    <p>Your trusted partner for premium household products. Quality, style, and affordability in every piece.</p>
+                    <div class="social-links">
+                        <a href="#">📘</a>
+                        <a href="#">📷</a>
+                        <a href="#">🐦</a>
+                        <a href="#">📺</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="index.html#categories">Categories</a></li>
+                        <li><a href="#about">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="products.html?category=Seating">Seating</a></li>
+                        <li><a href="products.html?category=Storage">Storage & Utility</a></li>
+                        <li><a href="products.html?category=Cleaning">Cleaning Essentials</a></li>
+                        <li><a href="products.html?category=Bath">Bath Essentials</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li>📧 info@besttraders.com</li>
+                        <li>📱 +91 98765 43210</li>
+                        <li>📍 Coimbatore, India</li>
+                        <li>⏰ Mon - Sat: 9AM - 6PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Best Traders. All rights reserved. | Designed with 💖</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">↑</button>
+
+    <script src="assets/js/product-detail.js"></script>
+</body>
+</html>

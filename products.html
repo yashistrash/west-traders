@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Best Traders</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>Best Traders</h1>
+                <span class="tagline">Premium Living</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="products.html" class="active">Products</a>
+                <a href="index.html#categories">Categories</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="nav-icons">
+                <button class="icon-btn search-btn">🔍</button>
+                <button class="icon-btn cart-btn">
+                    🛒
+                    <span class="badge">0</span>
+                </button>
+            </div>
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Products</h1>
+            <p>Discover our complete collection of premium household products</p>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> / <span>Products</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-layout">
+                <!-- Sidebar Filters -->
+                <aside class="sidebar">
+                    <div class="filter-header">
+                        <h3>Filters</h3>
+                        <button class="clear-filters">Clear All</button>
+                    </div>
+
+                    <!-- Search Filter -->
+                    <div class="filter-group">
+                        <h4>Search</h4>
+                        <input type="text" id="searchInput" class="search-input" placeholder="Search products...">
+                    </div>
+
+                    <!-- Category Filter -->
+                    <div class="filter-group">
+                        <h4>Category</h4>
+                        <div class="checkbox-group" id="categoryFilters">
+                            <label><input type="checkbox" value="all" checked> All Categories</label>
+                        </div>
+                    </div>
+
+                    <!-- Price Range Filter -->
+                    <div class="filter-group">
+                        <h4>Price Range</h4>
+                        <div class="price-range">
+                            <input type="range" id="priceRange" min="0" max="2000" value="2000" step="50">
+                            <div class="price-labels">
+                                <span>₹0</span>
+                                <span id="maxPrice">₹2000</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Color Filter -->
+                    <div class="filter-group">
+                        <h4>Colors</h4>
+                        <div class="color-swatches" id="colorFilters">
+                            <button class="color-swatch active" data-color="all" style="background: linear-gradient(135deg, #FF1493, #FFB6C1);" title="All Colors"></button>
+                        </div>
+                    </div>
+
+                    <!-- Sort Options -->
+                    <div class="filter-group">
+                        <h4>Sort By</h4>
+                        <select id="sortSelect" class="sort-select">
+                            <option value="featured">Featured</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="name-az">Name: A to Z</option>
+                            <option value="name-za">Name: Z to A</option>
+                        </select>
+                    </div>
+                </aside>
+
+                <!-- Products Grid -->
+                <div class="products-main">
+                    <div class="products-toolbar">
+                        <div class="results-count" id="resultsCount">Showing 65 products</div>
+                        <button class="mobile-filter-btn">🎛️ Filters</button>
+                    </div>
+
+                    <div class="products-grid" id="productsGrid">
+                        <!-- Products will be loaded here by JavaScript -->
+                        <div class="loading">Loading products...</div>
+                    </div>
+
+                    <!-- Empty State -->
+                    <div class="empty-state" id="emptyState" style="display: none;">
+                        <div class="empty-icon">😔</div>
+                        <h3>No products found</h3>
+                        <p>Try adjusting your filters or search term</p>
+                        <button class="btn btn-primary clear-filters">Clear Filters</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Best Traders</h3>
+                    <p>Your trusted partner for premium household products. Quality, style, and affordability in every piece.</p>
+                    <div class="social-links">
+                        <a href="#">📘</a>
+                        <a href="#">📷</a>
+                        <a href="#">🐦</a>
+                        <a href="#">📺</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="index.html#categories">Categories</a></li>
+                        <li><a href="#about">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="products.html?category=Seating">Seating</a></li>
+                        <li><a href="products.html?category=Storage">Storage & Utility</a></li>
+                        <li><a href="products.html?category=Cleaning">Cleaning Essentials</a></li>
+                        <li><a href="products.html?category=Bath">Bath Essentials</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li>📧 info@besttraders.com</li>
+                        <li>📱 +91 98765 43210</li>
+                        <li>📍 Coimbatore, India</li>
+                        <li>⏰ Mon - Sat: 9AM - 6PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Best Traders. All rights reserved. | Designed with 💖</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">↑</button>
+
+    <script src="assets/js/products.js"></script>
+</body>
+</html>

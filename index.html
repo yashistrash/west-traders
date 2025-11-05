@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>West Traders - Premium Household Products</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>West Traders</h1>
+                <span class="tagline">Premium Living</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="products.html">Products</a>
+                <a href="#categories">Categories</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="nav-icons">
+                <button class="icon-btn search-btn">🔍</button>
+                <button class="icon-btn cart-btn">
+                    🛒
+                    <span class="badge">0</span>
+                </button>
+            </div>
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="wave wave1"></div>
+            <div class="wave wave2"></div>
+            <div class="wave wave3"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <span class="hero-badge">🎉 New Collection 2024</span>
+                <h1 class="hero-title">Elevate Your Home with <span class="gradient-text">Style & Quality</span></h1>
+                <p class="hero-subtitle">Premium household products in beautiful colors. Transform your space with our curated collection of durable, elegant essentials.</p>
+                <div class="hero-buttons">
+                    <a href="products.html" class="btn btn-primary">Shop Collection</a>
+                    <a href="#categories" class="btn btn-outline">Explore Categories</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <h3>65+</h3>
+                        <p>Products</p>
+                    </div>
+                    <div class="stat">
+                        <h3>8</h3>
+                        <p>Categories</p>
+                    </div>
+                    <div class="stat">
+                        <h3>100%</h3>
+                        <p>Quality</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-card card-1">
+                    <div class="product-mini">
+                        <div class="icon">🪑</div>
+                        <h4>Premium Seating</h4>
+                        <p>₹379.50</p>
+                    </div>
+                </div>
+                <div class="floating-card card-2">
+                    <div class="product-mini">
+                        <div class="icon">🧺</div>
+                        <h4>Storage Solutions</h4>
+                        <p>₹144.90</p>
+                    </div>
+                </div>
+                <div class="floating-card card-3">
+                    <div class="product-mini">
+                        <div class="icon">🧼</div>
+                        <h4>Cleaning Essentials</h4>
+                        <p>₹72.45</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="categories">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Popular Collections</span>
+                <h2>Shop by Category</h2>
+                <p>Discover our wide range of premium household products</p>
+            </div>
+            <div class="category-grid">
+                <a href="products.html?category=Seating" class="category-card" data-category="seating">
+                    <div class="category-icon">🪑</div>
+                    <h3>Seating</h3>
+                    <p>Chairs, Stools & More</p>
+                    <span class="product-count">15 Products</span>
+                    <div class="category-overlay"></div>
+                </a>
+                <a href="products.html?category=Storage & Utility" class="category-card" data-category="storage">
+                    <div class="category-icon">🧺</div>
+                    <h3>Storage & Utility</h3>
+                    <p>Buckets, Drums & Tubs</p>
+                    <span class="product-count">25 Products</span>
+                    <div class="category-overlay"></div>
+                </a>
+                <a href="products.html?category=Cleaning Essentials" class="category-card" data-category="cleaning">
+                    <div class="category-icon">🧼</div>
+                    <h3>Cleaning Essentials</h3>
+                    <p>Dust Bins & Pans</p>
+                    <span class="product-count">10 Products</span>
+                    <div class="category-overlay"></div>
+                </a>
+                <a href="products.html?category=Bath Essentials" class="category-card" data-category="bath">
+                    <div class="category-icon">🛁</div>
+                    <h3>Bath Essentials</h3>
+                    <p>Mugs & Bath Sets</p>
+                    <span class="product-count">6 Products</span>
+                    <div class="category-overlay"></div>
+                </a>
+                <a href="products.html?category=Kitchen Storage" class="category-card" data-category="kitchen">
+                    <div class="category-icon">🍱</div>
+                    <h3>Kitchen Storage</h3>
+                    <p>Containers & More</p>
+                    <span class="product-count">7 Products</span>
+                    <div class="category-overlay"></div>
+                </a>
+                <a href="products.html?category=Appliance Accessories" class="category-card" data-category="appliance">
+                    <div class="category-icon">⚙️</div>
+                    <h3>Appliance Accessories</h3>
+                    <p>Stands & Organizers</p>
+                    <span class="product-count">12 Products</span>
+                    <div class="category-overlay"></div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Bestsellers</span>
+                <h2>Featured Products</h2>
+                <p>Our most popular items loved by customers</p>
+            </div>
+            <div class="products-carousel" id="featured-carousel">
+                <!-- Products will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Color Collections -->
+    <section class="color-collections">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Shop by Color</span>
+                <h2>Explore Our Color Palette</h2>
+                <p>Find products in your favorite shades</p>
+            </div>
+            <div class="color-filters">
+                <button class="color-filter" data-color="all" style="background: linear-gradient(135deg, #FF1493, #FFB6C1);">
+                    <span>All Colors</span>
+                </button>
+                <button class="color-filter" data-color="Blush Pink" style="background: #f9a8c4;">
+                    <span>Blush Pink</span>
+                </button>
+                <button class="color-filter" data-color="Pearl White" style="background: #fff7fb; border: 2px solid #FFB6C1;">
+                    <span>Pearl White</span>
+                </button>
+                <button class="color-filter" data-color="Rosewater" style="background: #f7b5ca;">
+                    <span>Rosewater</span>
+                </button>
+                <button class="color-filter" data-color="Cherry Blossom" style="background: #f6a6c1;">
+                    <span>Cherry Blossom</span>
+                </button>
+                <button class="color-filter" data-color="Cotton Candy" style="background: #fdd0e1;">
+                    <span>Cotton Candy</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Why West Traders</span>
+                <h2>What Makes Us Special</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">✨</div>
+                    <h3>Premium Quality</h3>
+                    <p>Crafted from virgin plastic for lasting durability and elegance</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Wide Color Range</h3>
+                    <p>Beautiful color options to match your home aesthetics perfectly</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Affordable Prices</h3>
+                    <p>Get the best value with our competitive pricing and discounts</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚚</div>
+                    <h3>Fast Delivery</h3>
+                    <p>Quick and reliable shipping to your doorstep nationwide</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2>Stay Updated</h2>
+                    <p>Subscribe to get special offers, new products, and inspiration delivered to your inbox</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>West Traders</h3>
+                    <p>Your trusted partner for premium household products. Quality, style, and affordability in every piece.</p>
+                    <div class="social-links">
+                        <a href="#">📘</a>
+                        <a href="#">📷</a>
+                        <a href="#">🐦</a>
+                        <a href="#">📺</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="#categories">Categories</a></li>
+                        <li><a href="#about">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="products.html?category=Seating">Seating</a></li>
+                        <li><a href="products.html?category=Storage">Storage & Utility</a></li>
+                        <li><a href="products.html?category=Cleaning">Cleaning Essentials</a></li>
+                        <li><a href="products.html?category=Bath">Bath Essentials</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li>📧 info@Westtraders.com</li>
+                        <li>📱 +91 98765 43210</li>
+                        <li>📍 Coimbatore, India</li>
+                        <li>⏰ Mon - Sat: 9AM - 6PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 West Traders. All rights reserved. | Designed with 💖</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">↑</button>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
