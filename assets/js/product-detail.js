@@ -45,7 +45,7 @@ function renderProductDetail() {
     if (!currentProduct) return;
 
     const icon = window.categoryIcons[currentProduct.category] || '🛒';
-    const gradient = window.categoryGradients[currentProduct.category] || 'linear-gradient(135deg, #FFB6C1 0%, #FFF0F5 100%)';
+    const gradient = window.categoryGradients[currentProduct.category] || 'linear-gradient(135deg, #87CEEB 0%, #E0F2FE 100%)';
     const discount = currentProduct.mrp ? Math.round(((currentProduct.mrp - currentProduct.price) / currentProduct.mrp) * 100) : 0;
     const savings = currentProduct.mrp ? (currentProduct.mrp - currentProduct.price).toFixed(2) : 0;
 
@@ -55,11 +55,21 @@ function renderProductDetail() {
         const placeholder = mainImage.querySelector('.image-placeholder');
         if (placeholder) {
             placeholder.style.background = gradient;
+            
+            if (currentProduct.image) {
+                placeholder.innerHTML = `<img src="${currentProduct.image}" alt="${currentProduct.name}" style="max-width: 100%; max-height: 100%; object-fit: contain;">`;
+            } else {
+                placeholder.innerHTML = `<div class="product-icon" id="productIcon">${icon}</div>`;
+            }
         }
     }
 
-    document.querySelectorAll('.product-icon, .thumb-icon').forEach(el => {
-        el.textContent = icon;
+    document.querySelectorAll('.thumb-icon').forEach(el => {
+        if (currentProduct.image) {
+            el.innerHTML = `<img src="${currentProduct.image}" alt="${currentProduct.name}" style="max-width: 100%; max-height: 100%; object-fit: contain;">`;
+        } else {
+            el.textContent = icon;
+        }
         el.parentElement.style.background = gradient;
     });
 
@@ -102,7 +112,7 @@ function renderColors() {
     if (!colorOptions || !currentProduct) return;
 
     const colorsHTML = currentProduct.colors.map(color => {
-        const hex = window.colorHex[color] || '#FFB6C1';
+        const hex = window.colorHex[color] || '#87CEEB';
         return `
             <div class="color-option" data-color="${color}">
                 <div class="color-circle" style="background: ${hex};"></div>

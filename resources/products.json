@@ -1,0 +1,124 @@
+[
+    {
+        "id": 1,
+        "name": "Plastic Chair EVEREST/ORTHO (First Quality)",
+        "category": "Seating",
+        "price": 827,
+        "mrp": 1199,
+        "capacity": null,
+        "dimensions": "49cm x 58.5cm x 89cm",
+        "weight": "4000 gms",
+        "colors": ["Sky Blue", "Pearl White", "Charcoal"],
+        "description": "Premium quality plastic chair with ergonomic design. Perfect for home, office, or outdoor use. Durable and comfortable seating solution.",
+        "image": "resources/ortho-chair.png"
+    },
+    {
+        "id": 2,
+        "name": "Plastic Chair with Armrest",
+        "category": "Seating",
+        "price": 414,
+        "mrp": 600,
+        "capacity": null,
+        "dimensions": "80cm x 56cm x 46cm",
+        "weight": "2250 gms",
+        "colors": ["Sky Blue", "Aqua", "Pearl White"],
+        "description": "Comfortable plastic chair with armrests for added support. Lightweight yet sturdy construction suitable for everyday use."
+    },
+    {
+        "id": 3,
+        "name": "Plastic Chair Armless",
+        "category": "Seating",
+        "price": 380,
+        "mrp": 550,
+        "capacity": null,
+        "dimensions": "89cm x 48cm x 39cm",
+        "weight": "2000 gms",
+        "colors": ["Baby Blue", "Cloud White", "Slate Grey"],
+        "description": "Sleek armless plastic chair design. Easy to stack and store. Ideal for events, gatherings, or space-saving solutions."
+    },
+    {
+        "id": 4,
+        "name": "Short Stool/Bath Stool",
+        "category": "Bath Essentials",
+        "price": 145,
+        "mrp": 210,
+        "capacity": null,
+        "dimensions": "25cm x 30cm",
+        "weight": "650 gms",
+        "colors": ["Powder Blue", "Pearl White", "Sky Mist"],
+        "description": "Versatile short stool perfect for bathroom use. Non-slip surface ensures safety. Compact and easy to clean."
+    },
+    {
+        "id": 5,
+        "name": "Short Stool/Bath Stool Printed",
+        "category": "Bath Essentials",
+        "price": 173,
+        "mrp": 250,
+        "capacity": null,
+        "dimensions": "25cm x 30cm",
+        "weight": "650 gms",
+        "colors": ["Sky Blue", "Aqua", "Baby Blue"],
+        "description": "Attractive printed bath stool with modern design. Durable plastic construction with decorative patterns. Adds style to your bathroom."
+    },
+    {
+        "id": 6,
+        "name": "Toilet Chair with Commode",
+        "category": "Bath Essentials",
+        "price": 455,
+        "mrp": 660,
+        "capacity": null,
+        "dimensions": "80cm x 56cm x 46cm",
+        "weight": null,
+        "colors": ["Pearl White", "Cloud White", "Frost White"],
+        "description": "Medical-grade toilet chair with commode feature. Provides comfort and convenience for elderly or those with mobility issues."
+    },
+    {
+        "id": 7,
+        "name": "Dust Pedal Bin",
+        "category": "Cleaning Essentials",
+        "price": 179,
+        "mrp": 260,
+        "capacity": "12 L",
+        "dimensions": "32cm x 28cm",
+        "weight": "600 gms",
+        "colors": ["Sky Blue", "Powder Blue", "Slate Grey"],
+        "description": "Hygienic pedal-operated dustbin with 12L capacity. Hands-free operation keeps your home clean. Durable lid mechanism."
+    },
+    {
+        "id": 8,
+        "name": "Dust Pedal Bin Printed",
+        "category": "Cleaning Essentials",
+        "price": 200,
+        "mrp": 290,
+        "capacity": "12 L",
+        "dimensions": "32cm x 28cm",
+        "weight": "600 gms",
+        "colors": ["Baby Blue", "Aqua", "Sky Mist"],
+        "description": "Stylish printed pedal dustbin with attractive patterns. Combines functionality with aesthetics. Perfect for modern homes."
+    },
+    {
+        "id": 9,
+        "name": "Commode",
+        "category": "Bath Essentials",
+        "price": 48,
+        "mrp": 70,
+        "capacity": null,
+        "dimensions": "20.5cm x 19cm",
+        "weight": "140 gms",
+        "colors": ["Pearl White", "Frost White", "Cloud White"],
+        "description": "Compact and portable commode solution. Lightweight and easy to clean. Essential bathroom accessory."
+    },
+    {
+        "id": 10,
+        "name": "Drum with Lid",
+        "category": "Storage & Utility",
+        "price": 356,
+        "mrp": 516,
+        "capacity": "50 L",
+        "dimensions": "49cm x 45cm",
+        "weight": "1700 gms",
+        "colors": ["Sky Blue", "Light Steel Blue", "Powder Blue"],
+        "description": "Large 50L drum with secure lid. Perfect for water storage, grains, or general household storage needs. Heavy-duty construction."
+    }
+]
+

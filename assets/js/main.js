@@ -12,32 +12,32 @@ const categoryIcons = {
 
 // Category Gradients
 const categoryGradients = {
-    'Seating': 'linear-gradient(135deg, #FFB6C1 0%, #FFF0F5 100%)',
-    'Storage & Utility': 'linear-gradient(135deg, #FFE4E1 0%, #FFF5F7 100%)',
+    'Seating': 'linear-gradient(135deg, #87CEEB 0%, #E0F2FE 100%)',
+    'Storage & Utility': 'linear-gradient(135deg, #B0E0E6 0%, #F0F8FF 100%)',
     'Cleaning Essentials': 'linear-gradient(135deg, #E6E6FA 0%, #F8F8FF 100%)',
-    'Bath Essentials': 'linear-gradient(135deg, #B0E0E6 0%, #F0F8FF 100%)',
+    'Bath Essentials': 'linear-gradient(135deg, #87CEEB 0%, #E0F2FE 100%)',
     'Kitchen Storage': 'linear-gradient(135deg, #FFDAB9 0%, #FFF8DC 100%)',
-    'Appliance Accessories': 'linear-gradient(135deg, #D8BFD8 0%, #F5F5F5 100%)'
+    'Appliance Accessories': 'linear-gradient(135deg, #B0C4DE 0%, #F5F5F5 100%)'
 };
 
 // Color Hex Mapping
 const colorHex = {
-    'Blush Pink': '#f9a8c4',
+    'Sky Blue': '#87CEEB',
     'Pearl White': '#fff7fb',
     'Slate Grey': '#9aa0b5',
-    'Rosewater': '#f7b5ca',
+    'Aqua': '#7FC7D9',
     'Frost White': '#fef6ff',
     'Sky Mist': '#bad6f2',
-    'Cherry Blossom': '#f6a6c1',
+    'Baby Blue': '#89CFF0',
     'Cloud White': '#fefaff',
     'Dusty Mauve': '#c7a7bd',
-    'Soft Blush': '#fbc8d9',
+    'Pale Turquoise': '#AFEEEE',
     'Snow': '#ffffff',
     'Seafoam': '#cce6e8',
-    'Cotton Candy': '#fdd0e1',
+    'Powder Blue': '#B0E0E6',
     'Ivory': '#fff2df',
     'Morning Dew': '#deece6',
-    'Platinum Pink': '#f2a2c2',
+    'Light Steel Blue': '#B0C4DE',
     'Moonlight': '#e1d9f5',
     'Charcoal': '#6d6a7c'
 };
@@ -57,18 +57,22 @@ async function loadProducts() {
 // Create product card HTML
 function createProductCard(product) {
     const icon = categoryIcons[product.category] || '🛒';
-    const gradient = categoryGradients[product.category] || 'linear-gradient(135deg, #FFB6C1 0%, #FFF0F5 100%)';
+    const gradient = categoryGradients[product.category] || 'linear-gradient(135deg, #87CEEB 0%, #E0F2FE 100%)';
     const discount = product.mrp ? Math.round(((product.mrp - product.price) / product.mrp) * 100) : 0;
 
     const colors = product.colors.slice(0, 3).map(color => {
-        const hex = colorHex[color] || '#FFB6C1';
+        const hex = colorHex[color] || '#87CEEB';
         return `<span class="color-dot" style="background: ${hex};" title="${color}"></span>`;
     }).join('');
+
+    const imageDisplay = product.image 
+        ? `<img src="${product.image}" alt="${product.name}" style="width: 100%; height: 100%; object-fit: contain;">`
+        : `<div class="product-icon-display">${icon}</div>`;
 
     return `
         <div class="product-card">
             <div class="product-image" style="background: ${gradient};">
-                <div class="product-icon-display">${icon}</div>
+                ${imageDisplay}
                 ${discount > 0 ? `<span class="product-badge">${discount}% OFF</span>` : ''}
             </div>
             <div class="product-body">

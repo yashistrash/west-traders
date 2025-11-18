@@ -1,31 +1,31 @@
 /* ===================================
-   Best Traders - Modern Pink & White Theme
+   Best Traders - Modern Light Blue & White Theme
    ================================== */
 
 /* CSS Variables */
 :root {
-    --primary-pink: #FF1493;
-    --blush-pink: #FFB6C1;
-    --light-pink: #FFE4E1;
-    --rose-gold: #B76E79;
-    --hot-pink: #FF69B4;
+    --primary-blue: #1E90FF;
+    --sky-blue: #87CEEB;
+    --light-blue: #E0F2FE;
+    --steel-blue: #4682B4;
+    --turquoise: #00CED1;
 
     --white: #FFFFFF;
-    --off-white: #FFF5F7;
+    --off-white: #F0F8FF;
     --cream: #FFF8F0;
     --light-gray: #F5F5F5;
     --gray: #999;
     --dark-gray: #666;
     --charcoal: #333333;
 
-    --gradient-primary: linear-gradient(135deg, #FF1493 0%, #FFB6C1 100%);
-    --gradient-soft: linear-gradient(135deg, #FFE4E1 0%, #FFF5F7 100%);
-    --gradient-vibrant: linear-gradient(135deg, #FF69B4 0%, #FF1493 100%);
+    --gradient-primary: linear-gradient(135deg, #1E90FF 0%, #87CEEB 100%);
+    --gradient-soft: linear-gradient(135deg, #E0F2FE 0%, #F0F8FF 100%);
+    --gradient-vibrant: linear-gradient(135deg, #00CED1 0%, #1E90FF 100%);
 
-    --shadow-sm: 0 2px 8px rgba(255, 20, 147, 0.1);
-    --shadow-md: 0 4px 16px rgba(255, 20, 147, 0.15);
-    --shadow-lg: 0 8px 32px rgba(255, 20, 147, 0.2);
-    --shadow-xl: 0 16px 48px rgba(255, 20, 147, 0.25);
+    --shadow-sm: 0 2px 8px rgba(30, 144, 255, 0.1);
+    --shadow-md: 0 4px 16px rgba(30, 144, 255, 0.15);
+    --shadow-lg: 0 8px 32px rgba(30, 144, 255, 0.2);
+    --shadow-xl: 0 16px 48px rgba(30, 144, 255, 0.25);
 
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-fast: all 0.2s ease;
@@ -159,7 +159,7 @@ button {
 }
 
 .icon-btn:hover {
-    background: var(--light-pink);
+    background: var(--light-blue);
     transform: scale(1.1);
 }
 
@@ -167,7 +167,7 @@ button {
     position: absolute;
     top: 0;
     right: 0;
-    background: var(--primary-pink);
+    background: var(--primary-blue);
     color: white;
     font-size: 0.7rem;
     padding: 0.15rem 0.4rem;
@@ -206,17 +206,17 @@ button {
 }
 
 .wave1 {
-    background: radial-gradient(circle, var(--primary-pink) 0%, transparent 70%);
+    background: radial-gradient(circle, var(--primary-blue) 0%, transparent 70%);
     animation: wave1 15s infinite ease-in-out;
 }
 
 .wave2 {
-    background: radial-gradient(circle, var(--blush-pink) 0%, transparent 70%);
+    background: radial-gradient(circle, var(--sky-blue) 0%, transparent 70%);
     animation: wave2 20s infinite ease-in-out;
 }
 
 .wave3 {
-    background: radial-gradient(circle, var(--hot-pink) 0%, transparent 70%);
+    background: radial-gradient(circle, var(--turquoise) 0%, transparent 70%);
     animation: wave3 25s infinite ease-in-out;
 }
 
@@ -247,7 +247,7 @@ button {
 .hero-badge {
     display: inline-block;
     background: var(--gradient-soft);
-    color: var(--primary-pink);
+    color: var(--primary-blue);
     padding: 0.5rem 1.5rem;
     border-radius: 50px;
     font-size: 0.9rem;
@@ -306,12 +306,12 @@ button {
 }
 
 .btn-outline {
-    border: 2px solid var(--primary-pink);
-    color: var(--primary-pink);
+    border: 2px solid var(--primary-blue);
+    color: var(--primary-blue);
 }
 
 .btn-outline:hover {
-    background: var(--primary-pink);
+    background: var(--primary-blue);
     color: white;
 }
 
@@ -391,7 +391,7 @@ button {
 }
 
 .product-mini p {
-    color: var(--primary-pink);
+    color: var(--primary-blue);
     font-weight: 700;
     font-size: 1.2rem;
 }
@@ -430,7 +430,7 @@ button {
 .section-badge {
     display: inline-block;
     background: var(--gradient-soft);
-    color: var(--primary-pink);
+    color: var(--primary-blue);
     padding: 0.4rem 1.2rem;
     border-radius: 50px;
     font-size: 0.85rem;
@@ -517,8 +517,8 @@ button {
 
 .product-count {
     display: inline-block;
-    background: var(--light-pink);
-    color: var(--primary-pink);
+    background: var(--light-blue);
+    color: var(--primary-blue);
     padding: 0.3rem 1rem;
     border-radius: 20px;
     font-size: 0.85rem;
@@ -569,7 +569,7 @@ button {
 
 .color-filter:hover,
 .color-filter.active {
-    border-color: var(--primary-pink);
+    border-color: var(--primary-blue);
     transform: translateY(-3px);
     box-shadow: var(--shadow-md);
 }
@@ -658,7 +658,7 @@ button {
 
 .newsletter-form button {
     background: white;
-    color: var(--primary-pink);
+    color: var(--primary-blue);
     padding: 1rem 2rem;
     border-radius: 50px;
     font-weight: 600;
@@ -711,7 +711,7 @@ button {
 }
 
 .footer-col ul li a:hover {
-    color: var(--blush-pink);
+    color: var(--sky-blue);
 }
 
 .social-links {
@@ -733,7 +733,7 @@ button {
 }
 
 .social-links a:hover {
-    background: var(--primary-pink);
+    background: var(--primary-blue);
     transform: scale(1.1);
 }
 
@@ -808,7 +808,7 @@ button {
 }
 
 .clear-filters {
-    color: var(--primary-pink);
+    color: var(--primary-blue);
     font-size: 0.9rem;
     font-weight: 600;
 }
@@ -845,7 +845,7 @@ button {
 .search-input:focus,
 .sort-select:focus {
     outline: none;
-    border-color: var(--primary-pink);
+    border-color: var(--primary-blue);
 }
 
 .checkbox-group label {
@@ -891,7 +891,7 @@ button {
 
 .color-swatch:hover,
 .color-swatch.active {
-    border-color: var(--primary-pink);
+    border-color: var(--primary-blue);
     transform: scale(1.1);
 }
 
@@ -911,7 +911,7 @@ button {
 .mobile-filter-btn {
     display: none;
     padding: 0.8rem 1.5rem;
-    background: var(--primary-pink);
+    background: var(--primary-blue);
     color: white;
     border-radius: 50px;
     font-weight: 600;
@@ -946,6 +946,14 @@ button {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    padding: 1rem;
+}
+
+.product-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: var(--transition);
 }
 
 .product-icon-display {
@@ -957,11 +965,15 @@ button {
     transform: scale(1.15) rotate(5deg);
 }
 
+.product-card:hover .product-image img {
+    transform: scale(1.1);
+}
+
 .product-badge {
     position: absolute;
     top: 1rem;
     right: 1rem;
-    background: var(--primary-pink);
+    background: var(--primary-blue);
     color: white;
     padding: 0.4rem 0.8rem;
     border-radius: 20px;
@@ -975,8 +987,8 @@ button {
 
 .category-tag {
     display: inline-block;
-    background: var(--light-pink);
-    color: var(--primary-pink);
+    background: var(--light-blue);
+    color: var(--primary-blue);
     padding: 0.3rem 0.8rem;
     border-radius: 15px;
     font-size: 0.75rem;
@@ -1003,7 +1015,7 @@ button {
 .current-price {
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--primary-pink);
+    color: var(--primary-blue);
 }
 
 .original-price {
@@ -1111,6 +1123,13 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 2rem;
+}
+
+.image-placeholder img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
 }
 
 .product-icon {
@@ -1133,7 +1152,7 @@ button {
 
 .wishlist-btn:hover {
     transform: scale(1.1);
-    background: var(--light-pink);
+    background: var(--light-blue);
 }
 
 .thumbnail-images {
@@ -1156,7 +1175,7 @@ button {
 
 .thumbnail:hover,
 .thumbnail.active {
-    border-color: var(--primary-pink);
+    border-color: var(--primary-blue);
 }
 
 .thumb-icon {
@@ -1166,8 +1185,8 @@ button {
 /* Product Info */
 .category-badge {
     display: inline-block;
-    background: var(--light-pink);
-    color: var(--primary-pink);
+    background: var(--light-blue);
+    color: var(--primary-blue);
     padding: 0.4rem 1rem;
     border-radius: 20px;
     font-size: 0.85rem;
@@ -1215,7 +1234,7 @@ button {
 .current-price {
     font-size: 2.5rem;
     font-weight: 800;
-    color: var(--primary-pink);
+    color: var(--primary-blue);
 }
 
 .original-price {
@@ -1294,7 +1313,7 @@ button {
 
 .color-option:hover .color-circle,
 .color-option.selected .color-circle {
-    border-color: var(--primary-pink);
+    border-color: var(--primary-blue);
     box-shadow: var(--shadow-md);
 }
 
@@ -1387,8 +1406,8 @@ button {
 
 .tab-header:hover,
 .tab-header.active {
-    color: var(--primary-pink);
-    border-bottom-color: var(--primary-pink);
+    color: var(--primary-blue);
+    border-bottom-color: var(--primary-blue);
 }
 
 .tab-content {
@@ -1418,7 +1437,7 @@ button {
 }
 
 .spec-card h4 {
-    color: var(--primary-pink);
+    color: var(--primary-blue);
     margin-bottom: 0.5rem;
 }
 
@@ -1438,7 +1457,7 @@ button {
 
 .average-rating h2 {
     font-size: 4rem;
-    color: var(--primary-pink);
+    color: var(--primary-blue);
     margin-bottom: 0.5rem;
 }
 

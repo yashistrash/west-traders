@@ -1,10 +1,10 @@
 # Best Traders - Ecommerce Website
 
-Modern, responsive ecommerce website for Best Traders - Premium household products with a beautiful pink and white theme.
+Modern, responsive ecommerce website for Best Traders - Premium household products with a beautiful light blue and white theme.
 
 ## Features
 
-- 🎨 Modern pink & white design theme
+- 🎨 Modern light blue & white design theme
 - 📱 Fully responsive (mobile, tablet, desktop)
 - 🛍️ 65+ products with detailed information
 - 🎯 Advanced filtering (category, price, color, search)
