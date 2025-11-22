@@ -1,31 +1,31 @@
 /* ===================================
-   Best Traders - Modern Light Blue & White Theme
+   West Traders - Modern Red & White Theme
    ================================== */
 
 /* CSS Variables */
 :root {
-    --primary-blue: #1E90FF;
-    --sky-blue: #87CEEB;
-    --light-blue: #E0F2FE;
-    --steel-blue: #4682B4;
-    --turquoise: #00CED1;
+    --primary-blue: #CA2621;
+    --sky-blue: #E84C47;
+    --light-blue: #FFEBEB;
+    --steel-blue: #A81F1B;
+    --turquoise: #D63832;
 
     --white: #FFFFFF;
-    --off-white: #F0F8FF;
-    --cream: #FFF8F0;
-    --light-gray: #F5F5F5;
+    --off-white: #FFE8E8;
+    --cream: #FFDEDE;
+    --light-gray: #FFF0F0;
     --gray: #999;
     --dark-gray: #666;
     --charcoal: #333333;
 
-    --gradient-primary: linear-gradient(135deg, #1E90FF 0%, #87CEEB 100%);
-    --gradient-soft: linear-gradient(135deg, #E0F2FE 0%, #F0F8FF 100%);
-    --gradient-vibrant: linear-gradient(135deg, #00CED1 0%, #1E90FF 100%);
+    --gradient-primary: linear-gradient(135deg, #CA2621 0%, #E84C47 100%);
+    --gradient-soft: linear-gradient(135deg, #FFD5D5 0%, #FFE8E8 100%);
+    --gradient-vibrant: linear-gradient(135deg, #D63832 0%, #CA2621 100%);
 
-    --shadow-sm: 0 2px 8px rgba(30, 144, 255, 0.1);
-    --shadow-md: 0 4px 16px rgba(30, 144, 255, 0.15);
-    --shadow-lg: 0 8px 32px rgba(30, 144, 255, 0.2);
-    --shadow-xl: 0 16px 48px rgba(30, 144, 255, 0.25);
+    --shadow-sm: 0 2px 8px rgba(202, 38, 33, 0.15);
+    --shadow-md: 0 4px 16px rgba(202, 38, 33, 0.2);
+    --shadow-lg: 0 8px 32px rgba(202, 38, 33, 0.25);
+    --shadow-xl: 0 16px 48px rgba(202, 38, 33, 0.3);
 
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-fast: all 0.2s ease;
@@ -101,6 +101,25 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-logo {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+}
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
 }
 
 .nav-brand h1 {

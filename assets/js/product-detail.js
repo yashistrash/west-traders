@@ -45,7 +45,7 @@ function renderProductDetail() {
     if (!currentProduct) return;
 
     const icon = window.categoryIcons[currentProduct.category] || '🛒';
-    const gradient = window.categoryGradients[currentProduct.category] || 'linear-gradient(135deg, #87CEEB 0%, #E0F2FE 100%)';
+    const gradient = window.categoryGradients[currentProduct.category] || 'linear-gradient(135deg, #E84C47 0%, #FFEBEB 100%)';
     const discount = currentProduct.mrp ? Math.round(((currentProduct.mrp - currentProduct.price) / currentProduct.mrp) * 100) : 0;
     const savings = currentProduct.mrp ? (currentProduct.mrp - currentProduct.price).toFixed(2) : 0;
 
@@ -112,7 +112,7 @@ function renderColors() {
     if (!colorOptions || !currentProduct) return;
 
     const colorsHTML = currentProduct.colors.map(color => {
-        const hex = window.colorHex[color] || '#87CEEB';
+        const hex = window.colorHex[color] || '#E84C47';
         return `
             <div class="color-option" data-color="${color}">
                 <div class="color-circle" style="background: ${hex};"></div>

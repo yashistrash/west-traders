@@ -49,7 +49,7 @@ function setupFilters() {
 
     if (colorFilters) {
         colors.forEach(color => {
-            const hex = window.colorHex[color] || '#87CEEB';
+            const hex = window.colorHex[color] || '#E84C47';
             const swatch = document.createElement('button');
             swatch.className = 'color-swatch';
             swatch.dataset.color = color;

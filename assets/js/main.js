@@ -1,4 +1,4 @@
-// Main JavaScript for Best Traders Website
+// Main JavaScript for West Traders Website
 
 // Category Icons Mapping
 const categoryIcons = {
@@ -12,32 +12,32 @@ const categoryIcons = {
 
 // Category Gradients
 const categoryGradients = {
-    'Seating': 'linear-gradient(135deg, #87CEEB 0%, #E0F2FE 100%)',
-    'Storage & Utility': 'linear-gradient(135deg, #B0E0E6 0%, #F0F8FF 100%)',
-    'Cleaning Essentials': 'linear-gradient(135deg, #E6E6FA 0%, #F8F8FF 100%)',
-    'Bath Essentials': 'linear-gradient(135deg, #87CEEB 0%, #E0F2FE 100%)',
+    'Seating': 'linear-gradient(135deg, #E84C47 0%, #FFEBEB 100%)',
+    'Storage & Utility': 'linear-gradient(135deg, #E65C57 0%, #FFF5F5 100%)',
+    'Cleaning Essentials': 'linear-gradient(135deg, #F07870 0%, #FFF8F8 100%)',
+    'Bath Essentials': 'linear-gradient(135deg, #E84C47 0%, #FFEBEB 100%)',
     'Kitchen Storage': 'linear-gradient(135deg, #FFDAB9 0%, #FFF8DC 100%)',
-    'Appliance Accessories': 'linear-gradient(135deg, #B0C4DE 0%, #F5F5F5 100%)'
+    'Appliance Accessories': 'linear-gradient(135deg, #E66660 0%, #F5F5F5 100%)'
 };
 
 // Color Hex Mapping
 const colorHex = {
-    'Sky Blue': '#87CEEB',
+    'Sky Blue': '#E84C47',
     'Pearl White': '#fff7fb',
     'Slate Grey': '#9aa0b5',
-    'Aqua': '#7FC7D9',
+    'Aqua': '#E65C57',
     'Frost White': '#fef6ff',
-    'Sky Mist': '#bad6f2',
-    'Baby Blue': '#89CFF0',
+    'Sky Mist': '#F07870',
+    'Baby Blue': '#E66660',
     'Cloud White': '#fefaff',
     'Dusty Mauve': '#c7a7bd',
-    'Pale Turquoise': '#AFEEEE',
+    'Pale Turquoise': '#F28B86',
     'Snow': '#ffffff',
-    'Seafoam': '#cce6e8',
-    'Powder Blue': '#B0E0E6',
+    'Seafoam': '#F5A7A3',
+    'Powder Blue': '#ED7D78',
     'Ivory': '#fff2df',
     'Morning Dew': '#deece6',
-    'Light Steel Blue': '#B0C4DE',
+    'Light Steel Blue': '#F19C98',
     'Moonlight': '#e1d9f5',
     'Charcoal': '#6d6a7c'
 };
@@ -57,11 +57,11 @@ async function loadProducts() {
 // Create product card HTML
 function createProductCard(product) {
     const icon = categoryIcons[product.category] || '🛒';
-    const gradient = categoryGradients[product.category] || 'linear-gradient(135deg, #87CEEB 0%, #E0F2FE 100%)';
+    const gradient = categoryGradients[product.category] || 'linear-gradient(135deg, #E84C47 0%, #FFEBEB 100%)';
     const discount = product.mrp ? Math.round(((product.mrp - product.price) / product.mrp) * 100) : 0;
 
     const colors = product.colors.slice(0, 3).map(color => {
-        const hex = colorHex[color] || '#87CEEB';
+        const hex = colorHex[color] || '#E84C47';
         return `<span class="color-dot" style="background: ${hex};" title="${color}"></span>`;
     }).join('');
 
