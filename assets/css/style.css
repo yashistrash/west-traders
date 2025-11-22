@@ -85,6 +85,19 @@ button {
     padding: 0 20px;
 }
 
+/* Company Slogan */
+.company-slogan {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-blue);
+    font-style: italic;
+    text-align: center;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background: var(--gradient-soft);
+    border-radius: 12px;
+}
+
 /* ===================================
    NAVIGATION
    ================================== */
@@ -285,6 +298,15 @@ button {
     background: var(--gradient-primary);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.hero-slogan {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--primary-blue);
+    font-style: italic;
+    margin-bottom: 1rem;
+    animation: fadeInUp 0.6s ease 0.3s backwards;
 }
 
 .hero-subtitle {
