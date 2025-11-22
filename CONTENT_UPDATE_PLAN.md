@@ -298,7 +298,7 @@ Key Features:
 ### Example 2: Bucket with Lid (20L)
 
 Keep your items secure and organized with our 20-liter bucket with lid. Perfect for storing everything from cleaning supplies to dry goods, this bucket offers the ideal combination of capacity and portability.
-
+ 
 The tight-fitting lid ensures contents stay fresh and protected from dust, moisture, and pests. Made from durable virgin plastic, this bucket is designed to handle heavy loads without cracking or warping.
 
 Key Features:
