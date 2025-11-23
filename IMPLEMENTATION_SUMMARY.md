@@ -249,7 +249,7 @@ West Traders/
 
 **Contact Info:**
 - Email: info@westtraders.com
-- Phone: +91 98765 43210
+- Phone: +91 98430 11007
 - Location: Coimbatore, India
 - Hours: Mon - Sat: 9AM - 6PM
 
@@ -320,7 +320,7 @@ The following items from the content plan can be implemented later:
 ## 📞 Contact Information (As per website)
 
 **Email:** info@westtraders.com
-**Phone:** +91 98765 43210
+**Phone:** +91 98430 11007
 **Location:** Coimbatore, India
 **Hours:** Monday - Saturday, 9AM - 6PM
 

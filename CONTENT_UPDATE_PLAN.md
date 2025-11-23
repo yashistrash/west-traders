@@ -92,7 +92,7 @@ Join our growing family of satisfied customers who trust West Traders for their 
 #### Contact Information (Lines 274-280)
 **Update**:
 - Email: info@westtraders.com (currently shows lowercase 'W')
-- Phone: [Add actual phone number]
+- Phone: 98430 11007
 - Location: [Add actual address]
 - Hours: Mon - Sat: 9AM - 6PM
 
@@ -268,7 +268,7 @@ We'd love to hear from you! Whether you have a question about products, pricing,
 
 **Contact Details**:
 - Email: [Your Email]
-- Phone: [Your Phone Number]
+- Phone: 98430 11007
 - WhatsApp: [Your WhatsApp Number]
 - Address: West Traders, [Your Business Address]
 
@@ -477,7 +477,7 @@ Maximize your living space with our smart storage and organization solutions. Ou
 
 ### Contact Information (Required)
 - [ ] Email address
-- [ ] Phone number
+- [x] Phone number: 98430 11007
 - [ ] WhatsApp number
 - [ ] Physical address
 - [ ] Google Maps embed (optional)
