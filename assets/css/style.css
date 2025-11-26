@@ -107,7 +107,7 @@ button {
     position: sticky;
     top: 0;
     z-index: 1000;
-    padding: 1rem 0;
+    padding: 0;
 }
 
 .navbar .container {
@@ -119,13 +119,13 @@ button {
 .nav-brand {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 2px;
     cursor: pointer;
     text-decoration: none;
 }
 
 .nav-logo {
-    height: 60px;
+    height: 120px;
     width: auto;
     object-fit: contain;
 }
@@ -136,11 +136,18 @@ button {
 }
 
 .nav-brand h1 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     background: var(--gradient-primary);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: -5px;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+.brand-line {
+    display: block;
 }
 
 .nav-brand .tagline {
