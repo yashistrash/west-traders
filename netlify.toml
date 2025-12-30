@@ -2,27 +2,33 @@
   command = "npm run build"
   publish = "dist"
 
+# Headers for JavaScript files
 [[headers]]
   for = "/assets/*.js"
   [headers.values]
     Content-Type = "application/javascript; charset=utf-8"
+    X-Content-Type-Options = "nosniff"
 
 [[headers]]
   for = "/*.js"
   [headers.values]
     Content-Type = "application/javascript; charset=utf-8"
+    X-Content-Type-Options = "nosniff"
 
 [[headers]]
   for = "/assets/*.mjs"
   [headers.values]
     Content-Type = "application/javascript; charset=utf-8"
+    X-Content-Type-Options = "nosniff"
 
 [[headers]]
   for = "/*.mjs"
   [headers.values]
     Content-Type = "application/javascript; charset=utf-8"
+    X-Content-Type-Options = "nosniff"
 
 # SPA fallback - redirect all routes to index.html
+# Netlify automatically skips redirects for files that exist (like JS/CSS assets)
 [[redirects]]
   from = "/*"
   to = "/index.html"
