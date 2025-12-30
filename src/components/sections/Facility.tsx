@@ -184,7 +184,7 @@ export function Facility() {
                   'scroll-px-3 sm:scroll-px-4',
                 )}
               >
-                {items.map((img, idx) => (
+                {items.map((img) => (
                   <div
                     key={img.src}
                     data-slide

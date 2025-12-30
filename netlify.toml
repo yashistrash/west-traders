@@ -1,6 +1,7 @@
 [build]
-  command = "npm run build"
+  command = "npm ci && npm run build"
   publish = "dist"
+  functions = "netlify/functions"
 
 # Headers for JavaScript files
 [[headers]]
