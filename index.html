@@ -1,281 +1,32 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>West Traders - Premium Household Products</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="index.html" class="nav-brand">
-                <img src="resources/1-removebg-preview.png" alt="West Traders Logo" class="nav-logo">
-                <div class="brand-text">
-                    <h1><span class="brand-line">West</span><span class="brand-line">Traders</span></h1>
-                </div>
-            </a>
-            <div class="nav-links">
-                <a href="index.html" class="active">Home</a>
-                <a href="products.html">Products</a>
-                <a href="#categories">Categories</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-            </div>
-            <div class="nav-icons">
-                <button class="icon-btn search-btn">🔍</button>
-                <button class="icon-btn cart-btn">
-                    🛒
-                    <span class="badge">0</span>
-                </button>
-            </div>
-            <button class="mobile-menu-btn">☰</button>
-        </div>
-    </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deva SEA FOOD | Frozen Seafood Import & Export</title>
+    <meta
+      name="description"
+      content="Deva SEA FOOD — frozen seafood supplier with import & export support. Ocean-fresh sourcing, cold-chain handling, and shipment-ready packing."
+    />
+    <meta name="theme-color" content="#06202D" />
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-background">
-            <div class="wave wave1"></div>
-            <div class="wave wave2"></div>
-            <div class="wave wave3"></div>
-        </div>
-        <div class="container hero-content">
-            <div class="hero-text">
-                <span class="hero-badge">🎉 New Collection 2025</span>
-                <h1 class="hero-title">Quality Household Essentials for <span class="gradient-text">Every Home</span></h1>
-                <p class="hero-slogan">"West - Always the Best."</p>
-                <p class="hero-subtitle">Discover durable, affordable plastic household products that make daily living easier. From storage solutions to furniture, we've got your home covered.</p>
-                <div class="hero-buttons">
-                    <a href="products.html" class="btn btn-primary">Shop Now</a>
-                    <a href="#categories" class="btn btn-outline">View Collections</a>
-                </div>
-                <div class="hero-stats">
-                    <div class="stat">
-                        <h3>65+</h3>
-                        <p>Products</p>
-                    </div>
-                    <div class="stat">
-                        <h3>8</h3>
-                        <p>Categories</p>
-                    </div>
-                    <div class="stat">
-                        <h3>100%</h3>
-                        <p>Quality</p>
-                    </div>
-                </div>
-            </div>
-            <div class="hero-visual">
-                <div class="floating-card card-1">
-                    <div class="product-mini">
-                        <div class="icon">🪑</div>
-                        <h4>Premium Seating</h4>
-                        <p>₹379.50</p>
-                    </div>
-                </div>
-                <div class="floating-card card-2">
-                    <div class="product-mini">
-                        <div class="icon">🧺</div>
-                        <h4>Storage Solutions</h4>
-                        <p>₹144.90</p>
-                    </div>
-                </div>
-                <div class="floating-card card-3">
-                    <div class="product-mini">
-                        <div class="icon">🧼</div>
-                        <h4>Cleaning Essentials</h4>
-                        <p>₹72.45</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <meta property="og:title" content="Deva SEA FOOD | Frozen Seafood Import & Export" />
+    <meta
+      property="og:description"
+      content="Frozen seafood supplier with import & export support, cold-chain handling, and export-ready packing."
+    />
+    <meta property="og:type" content="website" />
 
-    <!-- About West Traders Section -->
-    <section id="about" class="about-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">About Us</span>
-                <h2>West Traders</h2>
-            </div>
-            <div class="about-content">
-                <p class="company-slogan">"West - Always the Best."</p>
-                <p>West Traders is your trusted source for premium household plastic products. We specialize in providing high-quality, durable items that combine functionality with affordability. Our extensive collection includes everything from storage containers and furniture to kitchen essentials and bathroom accessories.</p>
-                <p>With a commitment to quality and customer satisfaction, we carefully select products that meet the highest standards. Whether you're organizing your kitchen, upgrading your furniture, or looking for reliable storage solutions, West Traders has exactly what you need.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Categories Section -->
-    <section id="categories" class="categories">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Popular Collections</span>
-                <h2>Shop by Category</h2>
-                <p>Discover our wide range of premium household products</p>
-            </div>
-            <div class="category-grid">
-                <a href="products.html?category=Seating" class="category-card" data-category="seating">
-                    <div class="category-icon">🪑</div>
-                    <h3>Seating</h3>
-                    <p>Comfortable and durable chairs, stools, and stands designed for everyday use</p>
-                    <span class="product-count">15 Products</span>
-                    <div class="category-overlay"></div>
-                </a>
-                <a href="products.html?category=Storage & Utility" class="category-card" data-category="storage">
-                    <div class="category-icon">🧺</div>
-                    <h3>Storage & Utility</h3>
-                    <p>Containers, buckets, drums, and bins in various sizes</p>
-                    <span class="product-count">25 Products</span>
-                    <div class="category-overlay"></div>
-                </a>
-                <a href="products.html?category=Cleaning Essentials" class="category-card" data-category="cleaning">
-                    <div class="category-icon">🧼</div>
-                    <h3>Cleaning Essentials</h3>
-                    <p>Dust Bins & Pans</p>
-                    <span class="product-count">10 Products</span>
-                    <div class="category-overlay"></div>
-                </a>
-                <a href="products.html?category=Bath Essentials" class="category-card" data-category="bath">
-                    <div class="category-icon">🛁</div>
-                    <h3>Bath Essentials</h3>
-                    <p>Bath sets, commodes, toilet chairs, and bathroom stools</p>
-                    <span class="product-count">6 Products</span>
-                    <div class="category-overlay"></div>
-                </a>
-                <a href="products.html?category=Kitchen Storage" class="category-card" data-category="kitchen">
-                    <div class="category-icon">🍱</div>
-                    <h3>Kitchen Storage</h3>
-                    <p>Mugs, containers, grinder stands, and more</p>
-                    <span class="product-count">7 Products</span>
-                    <div class="category-overlay"></div>
-                </a>
-                <a href="products.html?category=Appliance Accessories" class="category-card" data-category="appliance">
-                    <div class="category-icon">⚙️</div>
-                    <h3>Stands & Organizers</h3>
-                    <p>Fridge stands, cupboard stands, grinder stands, and wall organizers</p>
-                    <span class="product-count">12 Products</span>
-                    <div class="category-overlay"></div>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Featured Products -->
-    <section class="featured-products">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Bestsellers</span>
-                <h2>Featured Products</h2>
-                <p>Our most popular items loved by customers</p>
-            </div>
-            <div class="products-carousel" id="featured-carousel">
-                <!-- Products will be loaded here by JavaScript -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Choose Us -->
-    <section class="why-choose">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Why West Traders</span>
-                <h2>What Makes Us Special</h2>
-            </div>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">✨</div>
-                    <h3>Quality First</h3>
-                    <p>All our products are made from virgin plastic material, ensuring durability and longevity that recycled alternatives simply can't match.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">💰</div>
-                    <h3>Affordable Pricing</h3>
-                    <p>We believe quality shouldn't break the bank. Our competitive prices make premium household items accessible to everyone.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🎨</div>
-                    <h3>Wide Selection</h3>
-                    <p>From 2-liter buckets to 50-liter drums, from compact stools to ergonomic chairs—we offer the right size and style for every need.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🤝</div>
-                    <h3>Trusted by Thousands</h3>
-                    <p>Join our growing family of satisfied customers who trust West Traders for their household essentials.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Newsletter -->
-    <section class="newsletter">
-        <div class="container">
-            <div class="newsletter-content">
-                <div class="newsletter-text">
-                    <h2>Stay Updated</h2>
-                    <p>Subscribe to get special offers, new products, and inspiration delivered to your inbox</p>
-                </div>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Enter your email address" required>
-                    <button type="submit" class="btn btn-primary">Subscribe</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <h3>West Traders</h3>
-                    <p>Your trusted partner for premium household products. Quality, style, and affordability in every piece.</p>
-                    <div class="social-links">
-                        <a href="#">📘</a>
-                        <a href="#">📷</a>
-                        <a href="#">🐦</a>
-                        <a href="#">📺</a>
-                    </div>
-                </div>
-                <div class="footer-col">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="#categories">Categories</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="faq.html">FAQs</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Customer Service</h4>
-                    <ul>
-                        <li><a href="shipping.html">Shipping & Delivery</a></li>
-                        <li><a href="returns.html">Returns & Refunds</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Contact Us</h4>
-                    <ul>
-                        <li>📧 info@westtraders.com</li>
-                        <li>📱 +91 98430 11007</li>
-                        <li>📍 Coimbatore, India</li>
-                        <li>⏰ Mon - Sat: 9AM - 6PM</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 West Traders. All rights reserved. | Designed with 💖</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Back to Top Button -->
-    <button class="back-to-top" id="backToTop">↑</button>
-
-    <script src="assets/js/main.js"></script>
-</body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
